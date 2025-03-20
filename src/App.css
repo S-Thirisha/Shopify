@@ -1,0 +1,98 @@
+*{
+    margin:0px;
+    padding: 0px;
+}
+body{
+    background-color: #F5F5F5;
+}
+.container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin: 30px;
+}
+.image{
+    width: 100px;
+    height: 100px;
+}
+.product{
+    width: 300px;
+    height: 400px;
+    overflow: hidden;
+    text-align: center;
+    padding: 20px;
+    background-color: #FFFFFF;
+}
+.shopify{
+    background-color: #4B0082;
+    color: white;
+    height:60px;
+    text-align: center;
+    padding-top:30px ;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+}
+.filters{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    background-color: #663399;
+    padding: 10px;
+}
+.filters >li{
+    list-style: none;
+}
+.filters >li>button{
+    background-color: #663399;
+    outline: none;
+    font-weight: bold;
+    border: none;
+    color: white;
+    padding: 3px;
+}
+.filters >li>button:hover{
+    cursor: pointer;
+     
+}
+.filters >li>button::after{
+     content: "";
+     width: 0%;
+     height: 2px;
+     background: white;
+     transition: 0.5s;
+     display:block;
+     margin: auto;
+}
+
+.filters >li>button:hover::after{
+    cursor: pointer;
+     width: 100%;
+}
+.footer{
+    background-color: #4B0082;
+    color: white;
+    height: 60px;
+    padding-top: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+.title{
+    font-weight: bold;
+    font-size: 15px;
+}
+.price{
+    font-weight: bold;
+    font-size: 19px;
+    margin-top: 10px;
+    margin-bottom:10px ;
+}
+.description{
+   
+    font-size: 14px;
+}
