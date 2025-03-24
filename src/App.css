@@ -1,9 +1,10 @@
 *{
     margin:0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 body{
-    background-color: #F5F5F5;
+    background-color: #F8F8FF;
 }
 .container{
   display: flex;
@@ -19,18 +20,29 @@ body{
 }
 .product{
     width: 300px;
-    height: 400px;
-    overflow: hidden;
-    text-align: center;
+    height: 350px;
+     
+    
     padding: 20px;
-    background-color: #FFFFFF;
+    /* color: white; */
+    background-color: white;
+    display:flex;
+    flex-direction: column;
+    gap: 3px;
+    justify-content:space-between;
+    align-items: start;
 }
-.shopify{
-    background-color: #4B0082;
+ 
+.heading-container{
+    background-color: #121f28;
     color: white;
-    height:60px;
-    text-align: center;
-    padding-top:30px ;
+    height:80px;
+     
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding-right: 20px;
+    padding-left: 20px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 30px;
 }
@@ -40,45 +52,39 @@ body{
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
-    background-color: #663399;
+    background-color:#0e4e5d;
     padding: 10px;
 }
 .filters >li{
     list-style: none;
+    
 }
 .filters >li>button{
-    background-color: #663399;
+    background-color: #0e4e5d;
     outline: none;
     font-weight: bold;
     border: none;
     color: white;
     padding: 3px;
+    border: none;
+    outline: none;
+}
+.filters >li>button:active{
+    background-color: #F5F5F5;
+    color: black;
 }
 .filters >li>button:hover{
     cursor: pointer;
      
 }
-.filters >li>button::after{
-     content: "";
-     width: 0%;
-     height: 2px;
-     background: white;
-     transition: 0.5s;
-     display:block;
-     margin: auto;
-}
 
-.filters >li>button:hover::after{
-    cursor: pointer;
-     width: 100%;
-}
 .footer{
-    background-color: #4B0082;
+    background-color: #121f28;
     color: white;
     height: 60px;
     padding-top: 30px;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: bold;
     text-align: center;
 }
@@ -88,11 +94,41 @@ body{
 }
 .price{
     font-weight: bold;
-    font-size: 19px;
-    margin-top: 10px;
-    margin-bottom:10px ;
+    font-size: 16px;
+    
 }
 .description{
    
     font-size: 14px;
 }
+.cart,.heading{
+    display: inline;
+    font-size: 35px;
+}
+
+
+.cart-container{
+    display: flex;
+    flex-direction:column;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center ;
+}
+.itemCount{
+    position: absolute;
+    top: 28px;
+    right: 33px;
+     font-size: 18px;
+    border-radius: 50%;
+}
+
+ .add{
+    height:30px;
+    width: 100px;
+    border-radius: 50px;
+    background-color: #ffea3f;
+    border: none;
+    outline: none;
+    
+ }
+  
